@@ -1,7 +1,7 @@
 基于 GitHub Actions 实现 Golang 项目的自动构建部署
 
 
-前天 GitHub官网宣布 GitHub 的所有核心功能对所有人都免费开放,不得不说自从微软收购了GitHub后，确实带来了一些很大的改变。 
+前段时间 GitHub官网宣布 GitHub 的所有核心功能对所有人都免费开放,不得不说自从微软收购了GitHub后，确实带来了一些很大的改变。 
 
 以前有些项目考虑到协作关系的原因，虽然放在github上面，但对于一些项目的持续构建和部署一般是通过自行抢建Travis CI、jenkins等系统来实现。虽然去年推出了Actions用来代替它类三方系统，但感觉着还是不方便，必须有些核心功能无法使用，此消息的发布很有可能将这种格局打破。
 
@@ -12,7 +12,7 @@ GitHub Actions 是一款持续集成工具，包括clone代码，代码构建，
 
 如果你对CI/CD不了解的话，建议先找些文档看看。
 
-项目源文件见 https://github.com/cfanbo/github-actions-demo
+项目源文件见 https://github.com/hcq11/actions-go
 
 ## GitHub Actions 术语
 GitHub Actions 相关的术语。
@@ -85,7 +85,7 @@ ARGS (可选项)默认值为 -rltgoDzvO
 ## 四、上传代码到github远程仓库
 我们这里定义了当master分支发生push操作时就触发一系列workflow操作。
 <code>$git push origin master</code>
-这时我们可以在 https://github.com/cfanbo/github-actions-demo/actions 页面看到当前项目的构建情况。
+这时我们可以在 https://github.com/hcq11/actions-go/actions 页面看到当前项目的构建情况。
 
 ## 四、测试
 这里我们登录到远程服务器，可以发现一个server可执行文件，表示已经成功部署到生产服务器了

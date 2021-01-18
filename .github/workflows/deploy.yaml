@@ -11,11 +11,9 @@ jobs:
       - name: environment prepare stage
         env:
           MY_VAR: Hi there! My name is
-          FIRST_NAME: Mona
-          MIDDLE_NAME: The
-          LAST_NAME: Octocat
+          FIRST_NAME: Eden
         run:
-          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+          echo $MY_VAR $FIRST_NAME .
       - name: Set up Go 1.14 stage
         uses: actions/setup-go@v1
         id: go
