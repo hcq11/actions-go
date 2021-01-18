@@ -80,8 +80,6 @@ SOURCE (可选项)，默认为‘’, 构建服务器路径，这里为相应 $G
 REMOTE_TARGET 服务器部署路径，如 /data/ghactions
 ARGS (可选项)默认值为 -rltgoDzvO
 
-
-
 ## 四、上传代码到github远程仓库
 我们这里定义了当master分支发生push操作时就触发一系列workflow操作。
 <code>$git push origin master</code>
