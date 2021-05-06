@@ -19,6 +19,5 @@ func main() {
 			"data":  "hello word",
 		})
 	})
-
 	r.Run(":19090")
 }
